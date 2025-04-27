@@ -1,0 +1,6 @@
+Trip_ID,Driver_ID,Customer_ID,Pickup_Location,Drop_Location,Payment_Type,Fare,Trip_Date
+101,1,1,Ramol,Ambawadi,"Credit Card",15.75,2025-04-25
+102,2,3,Maninagar,Paldi,Cash,22.00,2025-04-26
+103,5,4,"S.g Highway",Ramol,UPI,18.00,2025-04-26
+104,3,2,Jamalpur,Ramol,Cash,20.00,2025-04-27
+105,4,5,Paldi,Gandhinagar,UPI,24.00,2025-04-25
