@@ -55,4 +55,34 @@ INSERT INTO Trips VALUES
 (104, 3, 2, 'Jamalpur', 'Ramol', 'Cash', 20.00, '2025-04-27'),
 (105, 4, 5, 'Paldi', 'Gandhinagar', 'UPI', 24.00, '2025-04-25');
 
+SELECT * FROM Trips;
+
+SELECT * FROM Drivers WHERE City = 'Paldi';
+
+SELECT * FROM Customers WHERE Rating > 4.5;
+
+SELECT * FROM Trips WHERE Payment_Type = 'UPI';
+
+SELECT * FROM Trips WHERE Trip_Date = '2025-04-26';
+
+SELECT COUNT(*) AS Total_Trips FROM Trips;
+
+SELECT Name, Rating FROM Drivers WHERE Rating < 4.5;
+
+SELECT * FROM Trips WHERE Pickup_Location = 'Ramol';
+
+SELECT t.Trip_ID, d.Name AS Driver_Name, c.Name AS Customer_Name, t.Fare FROM Trips t
+JOIN Drivers d ON t.Driver_ID = d.Driver_ID
+JOIN Customers c ON t.Customer_ID = c.Customer_ID
+WHERE t.Trip_Date = '2025-04-26';
+
+SELECT c.Name AS Customer_Name, d.Name AS Driver_Name, t.Fare, t.Trip_Date FROM Trips t
+JOIN Customers c ON t.Customer_ID = c.Customer_ID
+JOIN Drivers d ON t.Driver_ID = d.Driver_ID;
+
+
+
+
+
+
 
